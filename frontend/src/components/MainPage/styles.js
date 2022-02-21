@@ -3,15 +3,18 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export const useStyles = makeStyles((theme) =>
   createStyles({
-    header: {
-      backgroundColor: 'red',
+    container: {
+      margin: "2rem"
+    },
+    grid: {
       display: 'flex',
       justifyContent: 'center',
-      alignItems: "center",
-      height: "6rem"
+      flexDirection: 'row',
+      margin: '2rem',
+      padding: "2rem",
     },
-    container: {
-
+    card: {
+      width: "20rem"
     },
     body:{
       backgroundColor: 'green',
@@ -29,6 +32,19 @@ export const useStyles = makeStyles((theme) =>
       display:"flex",
       justifyContent:"center",
       alignItems:"center"
+    },
+    divider: {
+      width: "80%",
+      paddingTop: "1rem",
+    },
+    resultsCard: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      paddingTop: "2rem",
+      paddingBottom: "2rem",
+      width: "100%",
+      marginTop: "1rem"
     }
   }),
 );

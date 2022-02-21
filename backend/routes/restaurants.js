@@ -2,7 +2,7 @@ const router = require('express').Router();
 let Restaurants = require('../models/restaurants.model');
 
 router.route('/1').get((req, res) => {
-    Restaurants.find().limit(1)
+    Restaurants.find().limit(10)
       .then(restaurants => {
         res.json(restaurants)
       })
