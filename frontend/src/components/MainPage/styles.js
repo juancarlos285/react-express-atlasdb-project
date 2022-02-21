@@ -1,50 +1,36 @@
 import { createStyles, makeStyles, Theme } from '@mui/styles';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export const useStyles = makeStyles((theme) =>
   createStyles({
+    card:{
+      alignItems: 'center',
+      display: 'flex',
+      justifyContent: 'center',
+      margin: theme.spacing(0.5),
+      padding: theme.spacing(0.5),
+    },
     container: {
-      margin: "2rem"
+      margin: '2rem'
+    },
+    divider: {
+      paddingTop: '1rem',
+      width: '80%',
     },
     grid: {
       display: 'flex',
       justifyContent: 'center',
       flexDirection: 'row',
       margin: '2rem',
-      padding: "2rem",
-    },
-    card: {
-      width: "20rem"
-    },
-    body:{
-      backgroundColor: 'green',
-      margin: '0.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: "center",
-      height: "18rem",
-      flexDirection: "column",
-      padding:"2rem"
-    },
-    card:{
-      padding:"1rem",
-      margin: "1rem",
-      display:"flex",
-      justifyContent:"center",
-      alignItems:"center"
-    },
-    divider: {
-      width: "80%",
-      paddingTop: "1rem",
+      padding: '2rem',
     },
     resultsCard: {
+      alignItems: 'center',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
-      paddingTop: "2rem",
-      paddingBottom: "2rem",
-      width: "100%",
-      marginTop: "1rem"
+      marginTop: '1rem',
+      paddingBottom: '2rem',
+      paddingTop: '2rem',
+      width: '100%',
     }
   }),
 );
