@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Card, Container, Divider, Grid, Typography } from '@mui/material';
 import { useStyles } from './styles';
 
-const endpoint = "http://localhost:8000/restaurants/1"
+const endpoint = "http://localhost:8000/restaurants/10"
 
 export const MainPage = () => {
     const classes = useStyles()
